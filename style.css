@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#word-display {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#letters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.letter {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#wrong-guesses {
+    margin-bottom: 20px;
+}
+
+#hangman-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* ... other styles ... */
+
+/* Added styles for win/lose conditions */
+body.win {
+    background-color: green;
+    transition: background-color 0.5s ease;
+}
+
+body.lose {
+    background-color: red;
+    transition: background-color 0.5s ease;
+}
+
+#hint-box {
+    margin-top: 10px;
+    font-style: italic; 
+    color: #666; /* Light Gray or change to any other desired color*/ 
+}
+
